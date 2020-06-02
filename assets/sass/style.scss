@@ -1,0 +1,185 @@
+$core : "https://contactus.nikba.com/";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+#contactus {
+    font-family: 'Roboto', sans-serif;
+    z-index: 999999999;
+
+    .contactus_box {
+        position: fixed;
+        right: 30px;
+        bottom: 110px;
+        width: 240px;
+        background: #18222D;
+        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 12px;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s;
+        opacity: 0;
+        &.opened {
+            visibility: visible;
+            opacity: 1;
+        }
+        .contactus_box_header {
+            height: 32px;
+            background: #22303F;
+            border-radius: 12px 12px 0px 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            .contactus_box_header_title {
+                color: #AFC0D1;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        .contactus_box_item {
+            border-top: 1px solid #22303F;
+            border-bottom: 1px solid #22303F;
+            padding: 12px 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            text-decoration: none;
+            &:hover {
+                background: #294661;
+            }
+
+            .contactus_box_item_btn {
+                width: 48px;
+                height: 48px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.contactus_facebook {
+                    background: #0084FF;
+                    .contactus_item_btn_icon {
+                        width: 30px;
+                        height: 30px;
+                        background-image: url($core+"assets/svg/messenger.svg");
+                        background-size: cover;
+                    }
+                }
+
+                &.contactus_whatsapp {
+                    background: #25D366;
+                    .contactus_item_btn_icon {
+                        width: 30px;
+                        height: 30px;
+                        background-image: url($core+"assets/svg/whatsapp.svg");
+                        background-size: cover;
+                    }
+                }
+
+                &.contactus_viber {
+                    background: #8F5DB7;
+                    .contactus_item_btn_icon {
+                        width: 30px;
+                        height: 30px;
+                        background-image: url($core+"assets/svg/viber.svg");
+                        background-size: cover;
+                    }
+                }
+
+                &.contactus_telegram {
+                    background: #1B9DE2;
+                    .contactus_item_btn_icon {
+                        width: 30px;
+                        height: 30px;
+                        background-image: url($core+"assets/svg/telegram.svg");
+                        background-size: cover;
+                    }
+                }
+            }
+
+            .contactus_item_label {
+                color: #FFFFFF;
+                text-decoration: none;
+                margin-left: 10px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                .contactus_item_sub_label {
+                    display: block;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #AFC0D1;
+                }
+            }
+
+        }
+
+        .contactus_box_item:last-child {
+            border-bottom: none;
+            &:hover {
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+            }
+        }
+
+    }
+
+    .contactus_btn {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        background-color: #00A3FF;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+        animation: pulse 2s infinite;
+        cursor: pointer;
+
+        .contactus_btn_icon {
+            width: 30px;
+            height: 30px;
+            background-image: url($core+"assets/svg/message.svg");
+            background-size: cover;
+        }
+        &:hover, &:active {
+            animation: none;
+        }
+
+        &.opened {
+            animation: none;
+            .contactus_btn_icon {
+                background-image: url($core+"assets/svg/close.svg");
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+	}
+}

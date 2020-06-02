@@ -1,0 +1,506 @@
+.navbar-brand img {
+  height: 20px;
+}
+
+.btn-lg img {
+  height: 25px;
+}
+
+.contactus_pre_btn {
+  margin: 20% auto;
+  width: 150px;
+  height: 150px;
+  bottom: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #00A3FF;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.contactus_pre_btn .contactus_pre_btn_icon {
+  width: 90px;
+  height: 90px;
+  background-image: url("/assets/svg/message.svg");
+  background-size: cover;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.buttons .contactus_box_item_btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons .contactus_box_item_btn.contactus_facebook {
+  background: #0084FF;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse-facebook 2s infinite;
+          animation: pulse-facebook 2s infinite;
+}
+
+.buttons .contactus_box_item_btn.contactus_facebook .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/messenger.svg");
+  background-size: cover;
+}
+
+.buttons .contactus_box_item_btn.contactus_whatsapp {
+  background: #25D366;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse-whatsapp 2s infinite;
+          animation: pulse-whatsapp 2s infinite;
+}
+
+.buttons .contactus_box_item_btn.contactus_whatsapp .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/whatsapp.svg");
+  background-size: cover;
+}
+
+.buttons .contactus_box_item_btn.contactus_viber {
+  background: #8F5DB7;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse-viber 2s infinite;
+          animation: pulse-viber 2s infinite;
+}
+
+.buttons .contactus_box_item_btn.contactus_viber .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/viber.svg");
+  background-size: cover;
+}
+
+.buttons .contactus_box_item_btn.contactus_telegram {
+  background: #1B9DE2;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse-telegram 2s infinite;
+          animation: pulse-telegram 2s infinite;
+}
+
+.buttons .contactus_box_item_btn.contactus_telegram .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/telegram.svg");
+  background-size: cover;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+            box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+            box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+  }
+}
+
+@-webkit-keyframes pulse-facebook {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 132, 255, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 132, 255, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 132, 255, 0);
+            box-shadow: 0 0 0 10px rgba(0, 132, 255, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 132, 255, 0);
+            box-shadow: 0 0 0 0 rgba(0, 132, 255, 0);
+  }
+}
+
+@keyframes pulse-facebook {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 132, 255, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 132, 255, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 132, 255, 0);
+            box-shadow: 0 0 0 10px rgba(0, 132, 255, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 132, 255, 0);
+            box-shadow: 0 0 0 0 rgba(0, 132, 255, 0);
+  }
+}
+
+@-webkit-keyframes pulse-whatsapp {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes pulse-whatsapp {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@-webkit-keyframes pulse-viber {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(143, 93, 183, 0.7);
+            box-shadow: 0 0 0 0 rgba(143, 93, 183, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(143, 93, 183, 0);
+            box-shadow: 0 0 0 10px rgba(143, 93, 183, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(143, 93, 183, 0);
+            box-shadow: 0 0 0 0 rgba(143, 93, 183, 0);
+  }
+}
+
+@keyframes pulse-viber {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(143, 93, 183, 0.7);
+            box-shadow: 0 0 0 0 rgba(143, 93, 183, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(143, 93, 183, 0);
+            box-shadow: 0 0 0 10px rgba(143, 93, 183, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(143, 93, 183, 0);
+            box-shadow: 0 0 0 0 rgba(143, 93, 183, 0);
+  }
+}
+
+@-webkit-keyframes pulse-telegram {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(27, 157, 226, 0.7);
+            box-shadow: 0 0 0 0 rgba(27, 157, 226, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(27, 157, 226, 0);
+            box-shadow: 0 0 0 10px rgba(27, 157, 226, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
+            box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
+  }
+}
+
+@keyframes pulse-telegram {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(27, 157, 226, 0.7);
+            box-shadow: 0 0 0 0 rgba(27, 157, 226, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(27, 157, 226, 0);
+            box-shadow: 0 0 0 10px rgba(27, 157, 226, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
+            box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
+  }
+}
+
+.contactus_box_prev {
+  margin: 30px 50px;
+  width: 240px;
+  background: #18222D;
+  -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contactus_box_prev .contactus_box_header {
+  height: 32px;
+  background: #22303F;
+  border-radius: 12px 12px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+}
+
+.contactus_box_prev .contactus_box_header .contactus_box_header_title {
+  color: #AFC0D1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.contactus_box_prev .contactus_box_header .contactus_box_header_title .active {
+  background: #0056b3;
+}
+
+.contactus_box_prev .contactus_box_item {
+  border-top: 1px solid #22303F;
+  border-bottom: 1px solid #22303F;
+  padding: 12px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.contactus_box_prev .contactus_box_item:hover {
+  background: #294661;
+}
+
+.contactus_box_prev .contactus_box_item .active {
+  background: #0056b3;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_facebook {
+  background: #0084FF;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_facebook .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/messenger.svg");
+  background-size: cover;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_whatsapp {
+  background: #25D366;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_whatsapp .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/whatsapp.svg");
+  background-size: cover;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_viber {
+  background: #8F5DB7;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_viber .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/viber.svg");
+  background-size: cover;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_telegram {
+  background: #1B9DE2;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_telegram .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/telegram.svg");
+  background-size: cover;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_item_label {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_item_label .contactus_item_sub_label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #AFC0D1;
+}
+
+.contactus_box_prev .contactus_box_item:last-child {
+  border-bottom: none;
+}
+
+.contactus_box_prev .contactus_box_item:last-child:hover {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/*# sourceMappingURL=site.css.map */
