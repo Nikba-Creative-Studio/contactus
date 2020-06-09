@@ -126,6 +126,21 @@
   background-size: cover;
 }
 
+.buttons .contactus_box_item_btn.contactus_call {
+  background: #25D366;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: pulse-call 2s infinite;
+          animation: pulse-call 2s infinite;
+}
+
+.buttons .contactus_box_item_btn.contactus_call .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/call.svg");
+  background-size: cover;
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(0.95);
@@ -336,6 +351,48 @@
   }
 }
 
+@-webkit-keyframes pulse-call {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes pulse-call {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
 .contactus_box_prev {
   margin: 30px 50px;
   width: 240px;
@@ -474,6 +531,17 @@
   width: 30px;
   height: 30px;
   background-image: url("/assets/svg/telegram.svg");
+  background-size: cover;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_call {
+  background: #25D366;
+}
+
+.contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_call .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/svg/call.svg");
   background-size: cover;
 }
 

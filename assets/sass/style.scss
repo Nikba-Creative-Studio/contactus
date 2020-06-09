@@ -18,6 +18,9 @@ $core : "https://contactus.nikba.com/";
         flex-direction: column;
         transition: all 0.3s;
         opacity: 0;
+        &.contactus_box_left {
+            left: 30px;
+        }
         &.opened {
             visibility: visible;
             opacity: 1;
@@ -102,6 +105,16 @@ $core : "https://contactus.nikba.com/";
                         background-size: cover;
                     }
                 }
+
+                &.contactus_call {
+                    background: #25D366;
+                    .contactus_item_btn_icon {
+                        width: 30px;
+                        height: 30px;
+                        background-image: url($core+"assets/svg/call.svg");
+                        background-size: cover;
+                    }
+                }
             }
 
             .contactus_item_label {
@@ -147,6 +160,9 @@ $core : "https://contactus.nikba.com/";
         transform: scale(1);
         animation: pulse 2s infinite;
         cursor: pointer;
+        &.contactus_btn_left {
+            left: 30px;
+        }
 
         .contactus_btn_icon {
             width: 30px;

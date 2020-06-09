@@ -94,6 +94,18 @@
                 background-size: cover;
             }
         }
+
+        &.contactus_call {
+            background: #25D366;
+            transform: scale(1);
+            animation: pulse-call 2s infinite;
+            .contactus_item_btn_icon {
+                width: 30px;
+                height: 30px;
+                background-image: url("/assets/svg/call.svg");
+                background-size: cover;
+            }
+        }
     }
 }
 
@@ -179,6 +191,23 @@
 	100% {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
+	}
+}
+
+@keyframes pulse-call {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
 	}
 }
 
@@ -277,6 +306,16 @@
                     width: 30px;
                     height: 30px;
                     background-image: url("/assets/svg/telegram.svg");
+                    background-size: cover;
+                }
+            }
+
+            &.contactus_call {
+                background: #25D366;
+                .contactus_item_btn_icon {
+                    width: 30px;
+                    height: 30px;
+                    background-image: url("/assets/svg/call.svg");
                     background-size: cover;
                 }
             }

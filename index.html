@@ -64,6 +64,9 @@
                 <div class="contactus_box_item_btn contactus_telegram">
                     <div class="contactus_item_btn_icon"></div>
                 </div>
+                <div class="contactus_box_item_btn contactus_call">
+                    <div class="contactus_item_btn_icon"></div>
+                </div>
             </div>
             <h5>It's Free!</h5>
           </div>
@@ -97,16 +100,24 @@
                 <div class="col-md-6">
                     <form class="needs-validation" novalidate="">
                         
-                        <div class="mb-3">
-                            <label for="username">Widget Title</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="title" name="title" placeholder="Need help? Contact us!">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="title">Widget Title</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="title" name="title" placeholder="Need help? Contact us!">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="position">Widget Position</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="position" name="position" placeholder="Left or Right">
+                                </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="username">Facebook Page Username</label>
+                                <label for="facebook">Facebook Page Username</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">@</span>
@@ -115,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="username">Facebook Label</label>
+                                <label for="facebook-label">Facebook Label</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="facebook-label" name="facebook-label" placeholder="Write a message">
                                 </div>
@@ -124,7 +135,7 @@
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="username">WhatsApp phone number</label>
+                                <label for="whatsapp">WhatsApp phone number</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">+</span>
@@ -133,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="username">WhatsApp Label</label>
+                                <label for="whatsapp-label">WhatsApp Label</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="whatsapp-label" name="whatsapp-label" placeholder="Write a message">
                                 </div>
@@ -142,7 +153,7 @@
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="username">Viber phone number</label>
+                                <label for="viber">Viber phone number</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">+</span>
@@ -151,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="username">Viber Label</label>
+                                <label for="viber-label">Viber Label</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="viber-label" name="viber-label" placeholder="Write a message">
                                 </div>
@@ -160,7 +171,7 @@
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="username">Telegram Page Username</label>
+                                <label for="telegram">Telegram Page Username</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">@</span>
@@ -169,13 +180,30 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="username">Telegram Label</label>
+                                <label for="telegram-label">Telegram Label</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="telegram-label" name="telegram-label" placeholder="Write a message">
                                 </div>
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="call">Call phone number</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">+</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="call" name="call" placeholder="373 123 123">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="call-label">Call Label</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="call-label" name="call-label" placeholder="Call us anytime">
+                                </div>
+                            </div>
+                        </div>
 
 
                     </form>
@@ -207,6 +235,12 @@
                            </span>
                            <span class="contactus_item_label">Telegram<span class="contactus_item_sub_label telegram_label">Write a message</span></span>
                         </a>
+                        <a class="contactus_box_item" href="tel://" target="_blank">
+                            <span class="contactus_box_item_btn contactus_call">
+                               <div class="contactus_item_btn_icon"></div>
+                            </span>
+                            <span class="contactus_item_label">Call Us<span class="contactus_item_sub_label call_label">Call us anytime</span></span>
+                         </a>
                      </div>
                 </div>
             </div>
@@ -224,7 +258,7 @@
                             <br />
                             &lt;/script&gt;
                             <br />
-                            &lt;div id=&quot;contactus&quot; viber=&quot;+<span class="code_viber"></span>&quot; viber-label=&quot;<span class="code_viber_label"></span>&quot; whatsapp=&quot;+<span class="code_whatsapp"></span>&quot; whatsapp-label=&quot;<span class="code_whatsapp_label"></span>&quot; facebook=&quot;<span class="code_facebook"></span>&quot; facebook-label=&quot;<span class="code_facebook_label"></span>&quot; telegram=&quot;<span class="code_telegram"></span>&quot; telegram-label=&quot;<span class="code_telegram_label"></span>&quot; title=&quot;<span class="code_title"></span>&quot;&gt;&lt;/div&gt;
+                            &lt;div id=&quot;contactus&quot; call=&quot;+<span class="code_call"></span>&quot; call-label=&quot;<span class="code_call_label"></span>&quot; viber=&quot;+<span class="code_viber"></span>&quot; viber-label=&quot;<span class="code_viber_label"></span>&quot; whatsapp=&quot;+<span class="code_whatsapp"></span>&quot; whatsapp-label=&quot;<span class="code_whatsapp_label"></span>&quot; facebook=&quot;<span class="code_facebook"></span>&quot; facebook-label=&quot;<span class="code_facebook_label"></span>&quot; telegram=&quot;<span class="code_telegram"></span>&quot; telegram-label=&quot;<span class="code_telegram_label"></span>&quot; title=&quot;<span class="code_title"></span>&quot; position=&quot;<span class="code_position"></span>&quot; &gt;&lt;/div&gt;
                         </code>
                     </div>
                 </div>
@@ -248,12 +282,15 @@
             if (doc.getElementById(id)) return;
                 js = doc.createElement(scr); 
                 js.id = id;
-                js.src = 'https://contactus.nikba.com/contactus.min.js';
+                js.src = 'contactus.js';
                 fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'contactus-sdk'));
     </script>
     <div 
-        id="contactus" 
+        id="contactus"
+        position ="left"
+        call="+37369820825"
+        call-label="Call us anytime"
         viber="+37369820825"
         viber-label="Write a message"
         whatsapp="+37369820825" 

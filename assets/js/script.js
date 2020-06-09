@@ -5,6 +5,11 @@ const params = [
         code: '.code_title',
     },
     {
+        input: '#position',
+        label: '.position_label',
+        code: '.code_position',
+    },
+    {
         input: '#facebook-label',
         label: '.facebook_label',
         code: '.code_facebook_label'
@@ -43,7 +48,17 @@ const params = [
         input: '#telegram',
         label: '.telegram',
         code: '.code_telegram'
-   }
+   },
+   {
+    input: '#call-label',
+    label: '.call_label',
+    code: '.code_call_label'
+    },
+    {
+        input: '#call',
+        label: '.call',
+        code: '.code_call'
+   },
 ];
 
 

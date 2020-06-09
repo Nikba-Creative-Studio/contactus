@@ -26,6 +26,10 @@
   opacity: 0;
 }
 
+#contactus .contactus_box.contactus_box_left {
+  left: 30px;
+}
+
 #contactus .contactus_box.opened {
   visibility: visible;
   opacity: 1;
@@ -146,6 +150,17 @@
   background-size: cover;
 }
 
+#contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_call {
+  background: #25D366;
+}
+
+#contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_call .contactus_item_btn_icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("https://contactus.nikba.com/assets/svg/call.svg");
+  background-size: cover;
+}
+
 #contactus .contactus_box .contactus_box_item .contactus_item_label {
   color: #FFFFFF;
   text-decoration: none;
@@ -195,6 +210,10 @@
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
   cursor: pointer;
+}
+
+#contactus .contactus_btn.contactus_btn_left {
+  left: 30px;
 }
 
 #contactus .contactus_btn .contactus_btn_icon {

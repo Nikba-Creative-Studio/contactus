@@ -1,8 +1,11 @@
 let prefix            = "contactus";
 let core              = "http://127.0.0.1:5500/";
 let container         = document.querySelector("#contactus");
+let position             = container.getAttribute('position');
 let viber             = container.getAttribute('viber');
 let viberLabel        = container.getAttribute('viber-label');
+let call              = container.getAttribute('call');
+let callLabel         = container.getAttribute('call-label');
 let whatsapp          = container.getAttribute('whatsapp');
 let whatsappLabel     = container.getAttribute('whatsapp-label');
 let facebook          = container.getAttribute('facebook');
@@ -163,6 +166,39 @@ if(telegram !== null && telegram !== '') {
                 mainBoxTelegramBtnSubLabel.classList.add(prefix+"_item_sub_label");
                 mainBoxTelegramBtnSubLabel.textContent = telegramLabel;
                 mainBoxTelegramBtnLabel.appendChild(mainBoxTelegramBtnSubLabel);
+}
+
+//Add call
+if(call !== null && call !== '') {
+    let mainBoxcall = document.createElement("a");
+        mainBoxcall.className = prefix+"_box_item";
+        mainBoxcall.href = "tel://"+call;
+        mainBox.appendChild(mainBoxcall);
+        let mainBoxcallBtn = document.createElement("span");
+            mainBoxcallBtn.classList.add(prefix+"_box_item_btn");
+            mainBoxcallBtn.classList.add(prefix+"_call");
+            mainBoxcall.appendChild(mainBoxcallBtn);
+            let mainBoxcallBtnIcon = document.createElement("div");
+                mainBoxcallBtnIcon.classList.add(prefix+"_item_btn_icon");
+                mainBoxcallBtn.appendChild(mainBoxcallBtnIcon);
+        let mainBoxcallBtnLabel = document.createElement("span");
+            mainBoxcallBtnLabel.classList.add(prefix+"_item_label");
+            mainBoxcallBtnLabel.textContent = "Call Us";
+            mainBoxcall.appendChild(mainBoxcallBtnLabel);
+
+            if(callLabel == null || callLabel === '') {
+                callLabel = 'Call us anytime';
+            }
+            let mainBoxcallBtnSubLabel = document.createElement("span");
+                mainBoxcallBtnSubLabel.classList.add(prefix+"_item_sub_label");
+                mainBoxcallBtnSubLabel.textContent = callLabel;
+                mainBoxcallBtnLabel.appendChild(mainBoxcallBtnSubLabel);
+}
+
+//Widget Position
+if(position == 'left') {
+    mainButton.classList.add(prefix+"_btn_left");
+    mainBox.classList.add(prefix+"_box_left");
 }
 
 //Open CLose Box
