@@ -6,6 +6,7 @@
 
 #contactus .contactus_box {
   position: fixed;
+  z-index: 999999999;
   right: 30px;
   bottom: 110px;
   width: 240px;
@@ -28,6 +29,7 @@
 
 #contactus .contactus_box.contactus_box_left {
   left: 30px;
+  z-index: 999999999;
 }
 
 #contactus .contactus_box.opened {
@@ -168,6 +170,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
+  text-transform: capitalize;
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_item_label .contactus_item_sub_label {
@@ -190,6 +193,7 @@
 
 #contactus .contactus_btn {
   position: fixed;
+  z-index: 999999999;
   width: 60px;
   height: 60px;
   bottom: 30px;
@@ -214,6 +218,7 @@
 
 #contactus .contactus_btn.contactus_btn_left {
   left: 30px;
+  z-index: 999999999;
 }
 
 #contactus .contactus_btn .contactus_btn_icon {

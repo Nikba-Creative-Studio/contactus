@@ -7,6 +7,7 @@ $core : "https://contactus.nikba.com/";
 
     .contactus_box {
         position: fixed;
+        z-index: 999999999;
         right: 30px;
         bottom: 110px;
         width: 240px;
@@ -20,6 +21,7 @@ $core : "https://contactus.nikba.com/";
         opacity: 0;
         &.contactus_box_left {
             left: 30px;
+            z-index: 999999999;
         }
         &.opened {
             visibility: visible;
@@ -124,6 +126,7 @@ $core : "https://contactus.nikba.com/";
                 font-style: normal;
                 font-weight: bold;
                 font-size: 12px;
+                text-transform: capitalize;
                 .contactus_item_sub_label {
                     display: block;
                     font-style: normal;
@@ -148,6 +151,7 @@ $core : "https://contactus.nikba.com/";
 
     .contactus_btn {
         position: fixed;
+        z-index: 999999999;
         width: 60px;
         height: 60px;
         bottom: 30px;
@@ -162,6 +166,7 @@ $core : "https://contactus.nikba.com/";
         cursor: pointer;
         &.contactus_btn_left {
             left: 30px;
+            z-index: 999999999;
         }
 
         .contactus_btn_icon {
