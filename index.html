@@ -254,7 +254,7 @@
                         <code>
                             &lt;script&gt;
                             <br />
-                            (function(doc, scr, id) { var js, fjs = doc.getElementsByTagName(scr)[0]; if (doc.getElementById(id)) return; js = doc.createElement(scr); js.id = id; js.src = 'https://contactus.nikba.com/contactus.min.js'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'contactus-sdk')); 
+                            (function(doc, scr, id) { var js, fjs = doc.getElementsByTagName(scr)[0]; if (doc.getElementById(id)) return; js = doc.createElement(scr); js.id = id; js.src = 'https://contactus.nikba.com/contactus.min.js?v=1.6'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'contactus-sdk')); 
                             <br />
                             &lt;/script&gt;
                             <br />
@@ -282,7 +282,7 @@
             if (doc.getElementById(id)) return;
                 js = doc.createElement(scr); 
                 js.id = id;
-                js.src = 'contactus.js';
+                js.src = 'contactus.min.js?v=1.6';
                 fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'contactus-sdk'));
     </script>

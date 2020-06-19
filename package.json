@@ -1,0 +1,40 @@
+{
+  "name": "contactus",
+  "version": "1.6.0",
+  "description": "Contactus takes the website visitors directly to the messaging app on desktop or mobile. ",
+  "main": "contactus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikba-Creative-Studio/contactus.git"
+  },
+  "keywords": [
+    "facebook",
+    "whatsapp",
+    "telegram",
+    "viber",
+    "messenger",
+    "widget",
+    "wordpress",
+    "chat",
+    "call"
+  ],
+  "author": "Nikba Creative Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikba-Creative-Studio/contactus/issues"
+  },
+  "homepage": "https://github.com/Nikba-Creative-Studio/contactus#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
