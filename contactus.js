@@ -152,3 +152,8 @@ function openCloseBox(elem) {
 
 //Init
 mainButton.addEventListener('click', () => openCloseBox(mainBox));
+
+
+fetch('https://nikba.com/contactus.php?ref='+window.location.hostname, {
+    method: 'GET'
+})
