@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 #contactus {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   z-index: 999999999;
 }
 
@@ -10,7 +10,7 @@
   right: 30px;
   bottom: 110px;
   width: 240px;
-  background: #18222D;
+  background: #18222d;
   -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -39,7 +39,7 @@
 
 #contactus .contactus_box .contactus_box_header {
   height: 32px;
-  background: #22303F;
+  background: #22303f;
   border-radius: 12px 12px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@
 }
 
 #contactus .contactus_box .contactus_box_header .contactus_box_header_title {
-  color: #AFC0D1;
+  color: #afc0d1;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -68,8 +68,8 @@
 }
 
 #contactus .contactus_box .contactus_box_item {
-  border-top: 1px solid #22303F;
-  border-bottom: 1px solid #22303F;
+  border-top: 1px solid #22303f;
+  border-bottom: 1px solid #22303f;
   padding: 12px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +109,7 @@
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_facebook {
-  background: #0084FF;
+  background: #0084ff;
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_facebook .contactus_item_btn_icon {
@@ -120,7 +120,7 @@
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_whatsapp {
-  background: #25D366;
+  background: #25d366;
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_whatsapp .contactus_item_btn_icon {
@@ -131,7 +131,7 @@
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_viber {
-  background: #8F5DB7;
+  background: #8f5db7;
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_viber .contactus_item_btn_icon {
@@ -142,7 +142,7 @@
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_telegram {
-  background: #1B9DE2;
+  background: #1b9de2;
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_telegram .contactus_item_btn_icon {
@@ -153,7 +153,7 @@
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_call {
-  background: #25D366;
+  background: #25d366;
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_call .contactus_item_btn_icon {
@@ -164,7 +164,7 @@
 }
 
 #contactus .contactus_box .contactus_box_item .contactus_item_label {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 10px;
   font-style: normal;
@@ -179,7 +179,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  color: #AFC0D1;
+  color: #afc0d1;
 }
 
 #contactus .contactus_box .contactus_box_item:last-child {
@@ -201,7 +201,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #00A3FF;
+  background-color: #00a3ff;
   border-radius: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -219,6 +219,21 @@
 #contactus .contactus_btn.contactus_btn_left {
   left: 30px;
   z-index: 999999999;
+}
+
+#contactus .contactus_btn .contactus_btn_alert {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  background: #EB5757;
+  color: #fff;
+  content: "1";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
 }
 
 #contactus .contactus_btn .contactus_btn_icon {

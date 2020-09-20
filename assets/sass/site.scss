@@ -17,7 +17,7 @@
     bottom: 30px;
     right: 30px;
     display: flex;
-    background-color: #00A3FF;
+    background-color: #00a3ff;
     border-radius: 100%;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
         align-items: center;
 
         &.contactus_facebook {
-            background: #0084FF;
+            background: #0084ff;
             transform: scale(1);
             animation: pulse-facebook 2s infinite;
             .contactus_item_btn_icon {
@@ -60,7 +60,7 @@
         }
 
         &.contactus_whatsapp {
-            background: #25D366;
+            background: #25d366;
             transform: scale(1);
             animation: pulse-whatsapp 2s infinite;
             .contactus_item_btn_icon {
@@ -72,7 +72,7 @@
         }
 
         &.contactus_viber {
-            background: #8F5DB7;
+            background: #8f5db7;
             transform: scale(1);
             animation: pulse-viber 2s infinite;
             .contactus_item_btn_icon {
@@ -84,7 +84,7 @@
         }
 
         &.contactus_telegram {
-            background: #1B9DE2;
+            background: #1b9de2;
             transform: scale(1);
             animation: pulse-telegram 2s infinite;
             .contactus_item_btn_icon {
@@ -96,7 +96,7 @@
         }
 
         &.contactus_call {
-            background: #25D366;
+            background: #25d366;
             transform: scale(1);
             animation: pulse-call 2s infinite;
             .contactus_item_btn_icon {
@@ -110,120 +110,120 @@
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+    }
 }
 
 @keyframes pulse-facebook {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 132, 255, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 132, 255, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 132, 255, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 132, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 132, 255, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 132, 255, 0);
+    }
 }
 
 @keyframes pulse-whatsapp {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 
 @keyframes pulse-viber {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(143, 93, 183, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(143, 93, 183, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(143, 93, 183, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(143, 93, 183, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(143, 93, 183, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(143, 93, 183, 0);
+    }
 }
 
 @keyframes pulse-telegram {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(27, 157, 226, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(27, 157, 226, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(27, 157, 226, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(27, 157, 226, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(27, 157, 226, 0);
+    }
 }
 
 @keyframes pulse-call {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 
 .contactus_box_prev {
     margin: 30px 50px;
     width: 240px;
-    background: #18222D;
+    background: #18222d;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     transition: all 0.3s;
-    
+
     .contactus_box_header {
         height: 32px;
-        background: #22303F;
+        background: #22303f;
         border-radius: 12px 12px 0px 0px;
         display: flex;
         flex-direction: row;
@@ -232,7 +232,7 @@
         align-items: center;
         padding: 0px 20px;
         .contactus_box_header_title {
-            color: #AFC0D1;
+            color: #afc0d1;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
@@ -241,13 +241,12 @@
             .active {
                 background: #0056b3;
             }
-
         }
     }
 
     .contactus_box_item {
-        border-top: 1px solid #22303F;
-        border-bottom: 1px solid #22303F;
+        border-top: 1px solid #22303f;
+        border-bottom: 1px solid #22303f;
         padding: 12px 20px;
         display: flex;
         flex-direction: row;
@@ -271,7 +270,7 @@
             align-items: center;
 
             &.contactus_facebook {
-                background: #0084FF;
+                background: #0084ff;
                 .contactus_item_btn_icon {
                     width: 30px;
                     height: 30px;
@@ -281,7 +280,7 @@
             }
 
             &.contactus_whatsapp {
-                background: #25D366;
+                background: #25d366;
                 .contactus_item_btn_icon {
                     width: 30px;
                     height: 30px;
@@ -291,7 +290,7 @@
             }
 
             &.contactus_viber {
-                background: #8F5DB7;
+                background: #8f5db7;
                 .contactus_item_btn_icon {
                     width: 30px;
                     height: 30px;
@@ -301,7 +300,7 @@
             }
 
             &.contactus_telegram {
-                background: #1B9DE2;
+                background: #1b9de2;
                 .contactus_item_btn_icon {
                     width: 30px;
                     height: 30px;
@@ -311,7 +310,7 @@
             }
 
             &.contactus_call {
-                background: #25D366;
+                background: #25d366;
                 .contactus_item_btn_icon {
                     width: 30px;
                     height: 30px;
@@ -322,7 +321,7 @@
         }
 
         .contactus_item_label {
-            color: #FFFFFF;
+            color: #ffffff;
             text-decoration: none;
             margin-left: 10px;
             font-style: normal;
@@ -334,10 +333,9 @@
                 font-weight: normal;
                 font-size: 12px;
                 line-height: 14px;
-                color: #AFC0D1;
+                color: #afc0d1;
             }
         }
-
     }
 
     .contactus_box_item:last-child {
@@ -347,5 +345,4 @@
             border-bottom-right-radius: 12px;
         }
     }
-
 }

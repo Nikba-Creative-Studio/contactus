@@ -1,8 +1,8 @@
-$core : "https://contactus.nikba.com/";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+$core: "https://contactus.nikba.com/";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 
 #contactus {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     z-index: 999999999;
 
     .contactus_box {
@@ -11,7 +11,7 @@ $core : "https://contactus.nikba.com/";
         right: 30px;
         bottom: 110px;
         width: 240px;
-        background: #18222D;
+        background: #18222d;
         box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
         border-radius: 12px;
         visibility: hidden;
@@ -29,7 +29,7 @@ $core : "https://contactus.nikba.com/";
         }
         .contactus_box_header {
             height: 32px;
-            background: #22303F;
+            background: #22303f;
             border-radius: 12px 12px 0px 0px;
             display: flex;
             flex-direction: row;
@@ -38,7 +38,7 @@ $core : "https://contactus.nikba.com/";
             align-items: center;
             padding: 0px 20px;
             .contactus_box_header_title {
-                color: #AFC0D1;
+                color: #afc0d1;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 12px;
@@ -47,8 +47,8 @@ $core : "https://contactus.nikba.com/";
         }
 
         .contactus_box_item {
-            border-top: 1px solid #22303F;
-            border-bottom: 1px solid #22303F;
+            border-top: 1px solid #22303f;
+            border-bottom: 1px solid #22303f;
             padding: 12px 20px;
             display: flex;
             flex-direction: row;
@@ -69,58 +69,58 @@ $core : "https://contactus.nikba.com/";
                 align-items: center;
 
                 &.contactus_facebook {
-                    background: #0084FF;
+                    background: #0084ff;
                     .contactus_item_btn_icon {
                         width: 30px;
                         height: 30px;
-                        background-image: url($core+"assets/svg/messenger.svg");
+                        background-image: url($core + "assets/svg/messenger.svg");
                         background-size: cover;
                     }
                 }
 
                 &.contactus_whatsapp {
-                    background: #25D366;
+                    background: #25d366;
                     .contactus_item_btn_icon {
                         width: 30px;
                         height: 30px;
-                        background-image: url($core+"assets/svg/whatsapp.svg");
+                        background-image: url($core + "assets/svg/whatsapp.svg");
                         background-size: cover;
                     }
                 }
 
                 &.contactus_viber {
-                    background: #8F5DB7;
+                    background: #8f5db7;
                     .contactus_item_btn_icon {
                         width: 30px;
                         height: 30px;
-                        background-image: url($core+"assets/svg/viber.svg");
+                        background-image: url($core + "assets/svg/viber.svg");
                         background-size: cover;
                     }
                 }
 
                 &.contactus_telegram {
-                    background: #1B9DE2;
+                    background: #1b9de2;
                     .contactus_item_btn_icon {
                         width: 30px;
                         height: 30px;
-                        background-image: url($core+"assets/svg/telegram.svg");
+                        background-image: url($core + "assets/svg/telegram.svg");
                         background-size: cover;
                     }
                 }
 
                 &.contactus_call {
-                    background: #25D366;
+                    background: #25d366;
                     .contactus_item_btn_icon {
                         width: 30px;
                         height: 30px;
-                        background-image: url($core+"assets/svg/call.svg");
+                        background-image: url($core + "assets/svg/call.svg");
                         background-size: cover;
                     }
                 }
             }
 
             .contactus_item_label {
-                color: #FFFFFF;
+                color: #ffffff;
                 text-decoration: none;
                 margin-left: 10px;
                 font-style: normal;
@@ -133,10 +133,9 @@ $core : "https://contactus.nikba.com/";
                     font-weight: normal;
                     font-size: 12px;
                     line-height: 14px;
-                    color: #AFC0D1;
+                    color: #afc0d1;
                 }
             }
-
         }
 
         .contactus_box_item:last-child {
@@ -146,7 +145,6 @@ $core : "https://contactus.nikba.com/";
                 border-bottom-right-radius: 12px;
             }
         }
-
     }
 
     .contactus_btn {
@@ -157,7 +155,7 @@ $core : "https://contactus.nikba.com/";
         bottom: 30px;
         right: 30px;
         display: flex;
-        background-color: #00A3FF;
+        background-color: #00a3ff;
         border-radius: 100%;
         justify-content: center;
         align-items: center;
@@ -169,38 +167,54 @@ $core : "https://contactus.nikba.com/";
             z-index: 999999999;
         }
 
+        .contactus_btn_alert {
+            position: absolute;
+            right: -6px;
+            top: -6px;
+            background: #EB5757;
+            color: #fff;
+            content: "1";
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 22px;  
+        }
+
         .contactus_btn_icon {
             width: 30px;
             height: 30px;
-            background-image: url($core+"assets/svg/message.svg");
+            background-image: url($core + "assets/svg/message.svg");
             background-size: cover;
         }
-        &:hover, &:active {
+        &:hover,
+        &:active {
             animation: none;
         }
 
         &.opened {
             animation: none;
             .contactus_btn_icon {
-                background-image: url($core+"assets/svg/close.svg");
+                background-image: url($core + "assets/svg/close.svg");
             }
         }
     }
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
-	}
-	
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
-	}
-	
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
-	}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+    }
 }

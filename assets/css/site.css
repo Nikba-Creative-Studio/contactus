@@ -15,7 +15,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #00A3FF;
+  background-color: #00a3ff;
   border-radius: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -67,7 +67,7 @@
 }
 
 .buttons .contactus_box_item_btn.contactus_facebook {
-  background: #0084FF;
+  background: #0084ff;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: pulse-facebook 2s infinite;
@@ -82,7 +82,7 @@
 }
 
 .buttons .contactus_box_item_btn.contactus_whatsapp {
-  background: #25D366;
+  background: #25d366;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: pulse-whatsapp 2s infinite;
@@ -97,7 +97,7 @@
 }
 
 .buttons .contactus_box_item_btn.contactus_viber {
-  background: #8F5DB7;
+  background: #8f5db7;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: pulse-viber 2s infinite;
@@ -112,7 +112,7 @@
 }
 
 .buttons .contactus_box_item_btn.contactus_telegram {
-  background: #1B9DE2;
+  background: #1b9de2;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: pulse-telegram 2s infinite;
@@ -127,7 +127,7 @@
 }
 
 .buttons .contactus_box_item_btn.contactus_call {
-  background: #25D366;
+  background: #25d366;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: pulse-call 2s infinite;
@@ -396,7 +396,7 @@
 .contactus_box_prev {
   margin: 30px 50px;
   width: 240px;
-  background: #18222D;
+  background: #18222d;
   -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -413,7 +413,7 @@
 
 .contactus_box_prev .contactus_box_header {
   height: 32px;
-  background: #22303F;
+  background: #22303f;
   border-radius: 12px 12px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,7 +434,7 @@
 }
 
 .contactus_box_prev .contactus_box_header .contactus_box_header_title {
-  color: #AFC0D1;
+  color: #afc0d1;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -446,8 +446,8 @@
 }
 
 .contactus_box_prev .contactus_box_item {
-  border-top: 1px solid #22303F;
-  border-bottom: 1px solid #22303F;
+  border-top: 1px solid #22303f;
+  border-bottom: 1px solid #22303f;
   padding: 12px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,7 +491,7 @@
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_facebook {
-  background: #0084FF;
+  background: #0084ff;
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_facebook .contactus_item_btn_icon {
@@ -502,7 +502,7 @@
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_whatsapp {
-  background: #25D366;
+  background: #25d366;
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_whatsapp .contactus_item_btn_icon {
@@ -513,7 +513,7 @@
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_viber {
-  background: #8F5DB7;
+  background: #8f5db7;
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_viber .contactus_item_btn_icon {
@@ -524,7 +524,7 @@
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_telegram {
-  background: #1B9DE2;
+  background: #1b9de2;
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_telegram .contactus_item_btn_icon {
@@ -535,7 +535,7 @@
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_call {
-  background: #25D366;
+  background: #25d366;
 }
 
 .contactus_box_prev .contactus_box_item .contactus_box_item_btn.contactus_call .contactus_item_btn_icon {
@@ -546,7 +546,7 @@
 }
 
 .contactus_box_prev .contactus_box_item .contactus_item_label {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 10px;
   font-style: normal;
@@ -560,7 +560,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  color: #AFC0D1;
+  color: #afc0d1;
 }
 
 .contactus_box_prev .contactus_box_item:last-child {
