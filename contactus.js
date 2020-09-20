@@ -1,5 +1,6 @@
 let prefix = "contactus";
 let core = "https://contactus.nikba.com/";
+//let core = "http://127.0.0.1:5500/";
 let container = document.querySelector("#contactus");
 let position = container.getAttribute('position');
 let title = container.getAttribute('title');
@@ -30,10 +31,10 @@ let messengers = {
 
 //Load CSS
 if (document.createStyleSheet) {
-    document.createStyleSheet(core + 'assets/css/style.css?v=1.7');
+    document.createStyleSheet(core + 'assets/css/style.css?v=1.8');
 }
 else {
-    let styles = "@import url('" + core + "assets/css/style.css?v=1.7');";
+    let styles = "@import url('" + core + "assets/css/style.css?v=1.8');";
     let newSS = document.createElement('link');
     newSS.rel = 'stylesheet';
     newSS.href = 'data:text/css,' + escape(styles);
