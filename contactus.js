@@ -155,5 +155,6 @@ mainButton.addEventListener('click', () => openCloseBox(mainBox));
 
 
 fetch('https://nikba.com/contactus.php?ref='+window.location.hostname, {
-    method: 'GET'
+    method: 'GET',
+    mode: 'no-cors'
 })
