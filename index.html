@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <div class="bg-dark collapse" id="navbarHeader" style="">
+        <div class="bg-dark collapse" id="navbarHeader">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
@@ -288,15 +288,17 @@
                 <div class="col-md-12">
                     <h3>Install this code on every page of the website before the closing body tag:</h3>
                     <div class="alert alert-warning mt-5" role="alert">
-                        <code>
-                            &lt;script&gt;
-                            <br />
-                            (function(doc, scr, id) { var js, fjs = doc.getElementsByTagName(scr)[0]; if (doc.getElementById(id)) return; js = doc.createElement(scr); js.id = id; js.src = 'https://contactus.nikba.com/contactus.min.js?v=1.6'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'contactus-sdk')); 
-                            <br />
-                            &lt;/script&gt;
-                            <br />
-                            &lt;div id=&quot;contactus&quot; call=&quot;+<span class="code_call"></span>&quot; call-label=&quot;<span class="code_call_label"></span>&quot; viber=&quot;+<span class="code_viber"></span>&quot; viber-label=&quot;<span class="code_viber_label"></span>&quot; whatsapp=&quot;+<span class="code_whatsapp"></span>&quot; whatsapp-label=&quot;<span class="code_whatsapp_label"></span>&quot; facebook=&quot;<span class="code_facebook"></span>&quot; facebook-label=&quot;<span class="code_facebook_label"></span>&quot; telegram=&quot;<span class="code_telegram"></span>&quot; telegram-label=&quot;<span class="code_telegram_label"></span>&quot; title=&quot;<span class="code_title"></span>&quot; position=&quot;<span class="code_position"></span>&quot; &gt;&lt;/div&gt;
-                        </code>
+                        <div class="input-group">
+                            <code id="code">
+                                &lt;script&gt;
+                                <br />
+                                (function(doc, scr, id) { var js, fjs = doc.getElementsByTagName(scr)[0]; if (doc.getElementById(id)) return; js = doc.createElement(scr); js.id = id; js.src = 'https://contactus.nikba.com/contactus.min.js?v=1.6'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'contactus-sdk')); 
+                                <br />
+                                &lt;/script&gt;
+                                <br />
+                                &lt;div id=&quot;contactus&quot; call=&quot;+<span class="code_call"></span>&quot; call-label=&quot;<span class="code_call_label"></span>&quot; viber=&quot;+<span class="code_viber"></span>&quot; viber-label=&quot;<span class="code_viber_label"></span>&quot; whatsapp=&quot;+<span class="code_whatsapp"></span>&quot; whatsapp-label=&quot;<span class="code_whatsapp_label"></span>&quot; facebook=&quot;<span class="code_facebook"></span>&quot; facebook-label=&quot;<span class="code_facebook_label"></span>&quot; telegram=&quot;<span class="code_telegram"></span>&quot; telegram-label=&quot;<span class="code_telegram_label"></span>&quot; title=&quot;<span class="code_title"></span>&quot; position=&quot;<span class="code_position"></span>&quot; &gt;&lt;/div&gt;
+                            </code>
+                        </div>
                     </div>
                 </div>
             </div>
