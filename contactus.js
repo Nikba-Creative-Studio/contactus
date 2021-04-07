@@ -31,10 +31,10 @@ let messengers = {
 
 //Load CSS
 if (document.createStyleSheet) {
-    document.createStyleSheet(core + 'assets/css/style.css?v=1.8');
+    document.createStyleSheet(core + 'assets/css/style.css?v=1.91');
 }
 else {
-    let styles = "@import url('" + core + "assets/css/style.css?v=1.8');";
+    let styles = "@import url('" + core + "assets/css/style.css?v=1.91');";
     let newSS = document.createElement('link');
     newSS.rel = 'stylesheet';
     newSS.href = 'data:text/css,' + escape(styles);
