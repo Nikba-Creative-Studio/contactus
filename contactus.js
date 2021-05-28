@@ -14,7 +14,7 @@ let messengers = {
         label: 'Write a message'
     },
     "viber": {
-        url: 'viber://contact?number=',
+        url: 'viber://chat/?number=',
         label: 'Write a message'
     },
     "telegram": {

@@ -32,6 +32,7 @@ You can add your individual values for Widget Title and Button Text. This is ver
       telegram="nikba_com" 
       telegram-label="Write a message" 
       title="Need help? Contact us!"
+      position="left"
 ></div>
 ```
 
