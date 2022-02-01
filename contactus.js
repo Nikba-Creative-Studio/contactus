@@ -14,7 +14,7 @@ let messengers = {
         label: 'Write a message'
     },
     "viber": {
-        url: 'viber://chat/?number=',
+        url: 'viber://chat?number=',
         label: 'Write a message'
     },
     "telegram": {
@@ -31,10 +31,10 @@ let messengers = {
 
 //Load CSS
 if (document.createStyleSheet) {
-    document.createStyleSheet(core + 'assets/css/style.css?v=1.91');
+    document.createStyleSheet(core + 'assets/css/style.css?v=1.92');
 }
 else {
-    let styles = "@import url('" + core + "assets/css/style.css?v=1.91');";
+    let styles = "@import url('" + core + "assets/css/style.css?v=1.92');";
     let newSS = document.createElement('link');
     newSS.rel = 'stylesheet';
     newSS.href = 'data:text/css,' + escape(styles);
