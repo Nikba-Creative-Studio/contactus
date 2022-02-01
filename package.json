@@ -30,6 +30,7 @@
   "homepage": "https://github.com/Nikba-Creative-Studio/contactus#readme",
   "dependencies": {
     "lodash": "^4.17.21",
+    "ansi-regex": ">=5.0.1",
     "npm": "^6.14.13"
   },
   "devDependencies": {
