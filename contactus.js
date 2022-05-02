@@ -1,4 +1,5 @@
 let prefix = "contactus";
+let version = "1.98";
 let core = "https://contactus.nikba.com/";
 //let core = "http://127.0.0.1:5500/";
 let container = document.querySelector("#contactus");
@@ -31,10 +32,10 @@ let messengers = {
 
 //Load CSS
 if (document.createStyleSheet) {
-    document.createStyleSheet(core + 'assets/css/style.css?v=1.92');
+    document.createStyleSheet(core + 'assets/css/style.css?v=' + version);
 }
 else {
-    let styles = "@import url('" + core + "assets/css/style.css?v=1.92');";
+    let styles = "@import url('" + core + "assets/css/style.css?v="+ version +"');";
     let newSS = document.createElement('link');
     newSS.rel = 'stylesheet';
     newSS.href = 'data:text/css,' + escape(styles);
@@ -96,6 +97,14 @@ function openCloseBox(elem) {
     mainBoxHeaderTitle.classList.add(prefix + "_box_header_title");
     mainBoxHeaderTitle.textContent = title;
     mainBoxHeader.appendChild(mainBoxHeaderTitle);
+
+    //Add Contactus Logo
+    let mainBoxHeaderLogo = document.createElement("a");
+    mainBoxHeaderLogo.classList.add(prefix + "_box_header_logo");
+    mainBoxHeaderLogo.setAttribute('href', 'https://contactus.nikba.com/');
+    mainBoxHeaderLogo.setAttribute('target', '_blank');
+    mainBoxHeader.appendChild(mainBoxHeaderLogo);
+
 
 
     //Load Buttons
