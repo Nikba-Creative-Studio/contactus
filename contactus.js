@@ -11,7 +11,7 @@ let messengers = {
         label: 'Write a message'
     },
     "whatsapp": {
-        url: 'https://api.whatsapp.com/send?phone=',
+        url: 'https://wa.me/',
         label: 'Write a message'
     },
     "viber": {
@@ -105,8 +105,6 @@ function openCloseBox(elem) {
     mainBoxHeaderLogo.setAttribute('target', '_blank');
     mainBoxHeader.appendChild(mainBoxHeaderLogo);
 
-
-
     //Load Buttons
     for (var key in messengers) {
         // skip loop if the property is from prototype
@@ -127,10 +125,12 @@ function openCloseBox(elem) {
             mainBoxMessenger.href = messenger_url + messenger;
             mainBoxMessenger.setAttribute("target", "_blank");
             mainBox.appendChild(mainBoxMessenger);
+            
             let mainBoxMessengerBtn = document.createElement("span");
             mainBoxMessengerBtn.classList.add(prefix + "_box_item_btn");
             mainBoxMessengerBtn.classList.add(prefix + "_" + messenger_key);
             mainBoxMessenger.appendChild(mainBoxMessengerBtn);
+            
             let mainBoxMessengerBtnIcon = document.createElement("div");
             mainBoxMessengerBtnIcon.classList.add(prefix + "_item_btn_icon");
             mainBoxMessengerBtn.appendChild(mainBoxMessengerBtnIcon);
