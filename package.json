@@ -1,11 +1,12 @@
 {
   "name": "contactus",
-  "version": "1.9.2",
+  "version": "2.0",
   "description": "Contactus takes the website visitors directly to the messaging app on desktop or mobile. ",
   "main": "contactus.js",
+  "type": "module",
   "scripts": {
-    "build": "rm -rf dist && webpack",
-    "dev": "webpack-dev-server --open --watch"
+    "build": "gulp build",
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
@@ -28,15 +29,19 @@
     "url": "https://github.com/Nikba-Creative-Studio/contactus/issues"
   },
   "homepage": "https://github.com/Nikba-Creative-Studio/contactus#readme",
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "npm": "^8.11.0"
-  },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "babel-loader": "^8.3.0",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0"
+    "@babel/preset-env": "^7.20.2",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.58.0"
   }
 }
