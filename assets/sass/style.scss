@@ -1,220 +1,217 @@
+// Core variables
 $core: "https://contactus.nikba.com/";
+:root {
+  --contactus-bg: #18222d;
+  --contactus-header-bg: #22303f;
+  --contactus-border: #22303f;
+  --contactus-title: #afc0d1;
+  --contactus-white: #fff;
+  --contactus-facebook: #0084ff;
+  --contactus-whatsapp: #25d366;
+  --contactus-viber: #8f5db7;
+  --contactus-telegram: #1b9de2;
+  --contactus-call: #25d366;
+  --contactus-btn-bg: #00a3ff;
+  --contactus-alert: #EB5757;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 
 #contactus {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  z-index: 999999999;
+
+  .contactus_box {
+    position: fixed;
     z-index: 999999999;
-
-    .contactus_box {
-        position: fixed;
-        z-index: 999999999;
-        right: 30px;
-        bottom: 110px;
-        width: 240px;
-        background: #18222d;
-        box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
-        border-radius: 12px;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        transition: all 0.3s;
-        opacity: 0;
-        &.contactus_box_left {
-            left: 30px;
-            z-index: 999999999;
-        }
-        &.opened {
-            visibility: visible;
-            opacity: 1;
-        }
-        .contactus_box_header {
-            height: 32px;
-            background: #22303f;
-            border-radius: 12px 12px 0px 0px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 20px;
-            .contactus_box_header_title {
-                color: #afc0d1;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 12px;
-                line-height: 14px;
-            }
-        }
-
-        .contactus_box_item {
-            border-top: 1px solid #22303f;
-            border-bottom: 1px solid #22303f;
-            padding: 12px 20px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: center;
-            text-decoration: none;
-            &:hover {
-                background: #294661;
-            }
-
-            .contactus_box_item_btn {
-                width: 48px;
-                height: 48px;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                &.contactus_facebook {
-                    background: #0084ff;
-                    .contactus_item_btn_icon {
-                        width: 30px;
-                        height: 30px;
-                        background-image: url($core + "assets/svg/messenger.svg");
-                        background-size: cover;
-                    }
-                }
-
-                &.contactus_whatsapp {
-                    background: #25d366;
-                    .contactus_item_btn_icon {
-                        width: 30px;
-                        height: 30px;
-                        background-image: url($core + "assets/svg/whatsapp.svg");
-                        background-size: cover;
-                    }
-                }
-
-                &.contactus_viber {
-                    background: #8f5db7;
-                    .contactus_item_btn_icon {
-                        width: 30px;
-                        height: 30px;
-                        background-image: url($core + "assets/svg/viber.svg");
-                        background-size: cover;
-                    }
-                }
-
-                &.contactus_telegram {
-                    background: #1b9de2;
-                    .contactus_item_btn_icon {
-                        width: 30px;
-                        height: 30px;
-                        background-image: url($core + "assets/svg/telegram.svg");
-                        background-size: cover;
-                    }
-                }
-
-                &.contactus_call {
-                    background: #25d366;
-                    .contactus_item_btn_icon {
-                        width: 30px;
-                        height: 30px;
-                        background-image: url($core + "assets/svg/call.svg");
-                        background-size: cover;
-                    }
-                }
-            }
-
-            .contactus_item_label {
-                color: #ffffff;
-                text-decoration: none;
-                margin-left: 10px;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 12px;
-                text-transform: capitalize;
-                .contactus_item_sub_label {
-                    display: block;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #afc0d1;
-                }
-            }
-        }
-
-        .contactus_box_item:last-child {
-            border-bottom: none;
-            &:hover {
-                border-bottom-left-radius: 12px;
-                border-bottom-right-radius: 12px;
-            }
-        }
+    right: 30px;
+    bottom: 110px;
+    width: 240px;
+    background: var(--contactus-bg);
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    &.contactus_box_left {
+      left: 30px;
     }
-
-    .contactus_btn {
-        position: fixed;
-        z-index: 999999999;
-        width: 60px;
-        height: 60px;
-        bottom: 30px;
-        right: 30px;
+    &.opened {
+      visibility: visible;
+      opacity: 1;
+    }
+    .contactus_box_header {
+      height: 32px;
+      background: var(--contactus-header-bg);
+      border-radius: 12px 12px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      .contactus_box_header_title {
+        color: var(--contactus-title);
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+    }
+    .contactus_box_item {
+      border-top: 1px solid var(--contactus-border);
+      border-bottom: 1px solid var(--contactus-border);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: background 0.2s;
+      &:hover, &:focus {
+        background: #294661;
+      }
+      .contactus_box_item_btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
         display: flex;
-        background-color: #00a3ff;
-        border-radius: 100%;
         justify-content: center;
         align-items: center;
-        transform: scale(1);
-        animation: pulse 2s infinite;
-        cursor: pointer;
-        &.contactus_btn_left {
-            left: 30px;
-            z-index: 999999999;
-        }
-
-        .contactus_btn_alert {
-            position: absolute;
-            right: -6px;
-            top: -6px;
-            background: #EB5757;
-            color: #fff;
-            content: "1";
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 12px;
-            line-height: 22px;  
-        }
-
-        .contactus_btn_icon {
+        transition: box-shadow 0.2s;
+        &.contactus_facebook {
+          background: var(--contactus-facebook);
+          .contactus_item_btn_icon {
             width: 30px;
             height: 30px;
-            background-image: url($core + "assets/svg/message.svg");
+            background-image: url(#{$core}assets/svg/messenger.svg);
             background-size: cover;
+          }
         }
-        &:hover,
-        &:active {
-            animation: none;
+        &.contactus_whatsapp {
+          background: var(--contactus-whatsapp);
+          .contactus_item_btn_icon {
+            width: 30px;
+            height: 30px;
+            background-image: url(#{$core}assets/svg/whatsapp.svg);
+            background-size: cover;
+          }
         }
-
-        &.opened {
-            animation: none;
-            .contactus_btn_icon {
-                background-image: url($core + "assets/svg/close.svg");
-            }
+        &.contactus_viber {
+          background: var(--contactus-viber);
+          .contactus_item_btn_icon {
+            width: 30px;
+            height: 30px;
+            background-image: url(#{$core}assets/svg/viber.svg);
+            background-size: cover;
+          }
         }
+        &.contactus_telegram {
+          background: var(--contactus-telegram);
+          .contactus_item_btn_icon {
+            width: 30px;
+            height: 30px;
+            background-image: url(#{$core}assets/svg/telegram.svg);
+            background-size: cover;
+          }
+        }
+        &.contactus_call {
+          background: var(--contactus-call);
+          .contactus_item_btn_icon {
+            width: 30px;
+            height: 30px;
+            background-image: url(#{$core}assets/svg/call.svg);
+            background-size: cover;
+          }
+        }
+      }
+      .contactus_item_label {
+        color: var(--contactus-white);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        .contactus_item_sub_label {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: var(--contactus-title);
+        }
+      }
     }
+    .contactus_box_item:last-child {
+      border-bottom: none;
+      &:hover {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+    }
+  }
+  .contactus_btn {
+    position: fixed;
+    z-index: 999999999;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    background-color: var(--contactus-btn-bg);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    transition: box-shadow 0.2s, background 0.2s;
+    &.contactus_btn_left {
+      left: 30px;
+    }
+    .contactus_btn_alert {
+      position: absolute;
+      right: -6px;
+      top: -6px;
+      background: var(--contactus-alert);
+      color: var(--contactus-white);
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .contactus_btn_icon {
+      width: 30px;
+      height: 30px;
+      background-image: url(#{$core}assets/svg/message.svg);
+      background-size: cover;
+      transition: background-image 0.2s;
+    }
+    &:hover,
+    &:active {
+      animation: none;
+    }
+    &.opened {
+      animation: none;
+      .contactus_btn_icon {
+        background-image: url(#{$core}assets/svg/close.svg);
+      }
+    }
+  }
 }
 
+// Animation
 @keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
-    }
-
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
-    }
-
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
-    }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+  }
 }

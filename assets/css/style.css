@@ -1,213 +1,151 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+:root {
+  --contactus-bg: #18222d;
+  --contactus-header-bg: #22303f;
+  --contactus-border: #22303f;
+  --contactus-title: #afc0d1;
+  --contactus-white: #fff;
+  --contactus-facebook: #0084ff;
+  --contactus-whatsapp: #25d366;
+  --contactus-viber: #8f5db7;
+  --contactus-telegram: #1b9de2;
+  --contactus-call: #25d366;
+  --contactus-btn-bg: #00a3ff;
+  --contactus-alert: #EB5757;
+}
+
 #contactus {
   font-family: "Roboto", sans-serif;
   z-index: 999999999;
 }
-
 #contactus .contactus_box {
   position: fixed;
   z-index: 999999999;
   right: 30px;
   bottom: 110px;
   width: 240px;
-  background: #18222d;
-  -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
-          box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+  background: var(--contactus-bg);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  flex-direction: column;
+  gap: 0;
+  transition: opacity 0.3s, visibility 0.3s;
   opacity: 0;
 }
-
 #contactus .contactus_box.contactus_box_left {
   left: 30px;
-  z-index: 999999999;
 }
-
 #contactus .contactus_box.opened {
   visibility: visible;
   opacity: 1;
 }
-
 #contactus .contactus_box .contactus_box_header {
   height: 32px;
-  background: #22303f;
-  border-radius: 12px 12px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: var(--contactus-header-bg);
+  border-radius: 12px 12px 0 0;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 20px;
-}
-
-#contactus .contactus_box .contactus_box_header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-
 #contactus .contactus_box .contactus_box_header .contactus_box_header_title {
-  color: #afc0d1;
-  font-style: normal;
-  font-weight: normal;
+  color: var(--contactus-title);
   font-size: 12px;
   line-height: 14px;
-  overflow: hidden;
-  height: 14px;
+  font-weight: 400;
 }
-
-#contactus .contactus_box .contactus_box_header .contactus_box_header_logo {
-  width: 16px;
-  height: 16px;
-  background: url("https://contactus.nikba.com/assets/svg/message.svg") no-repeat center;
-  background-size: contain;
-  margin-right: -10px;
-}
-
 #contactus .contactus_box .contactus_box_item {
-  border-top: 1px solid #22303f;
-  border-bottom: 1px solid #22303f;
+  border-top: 1px solid var(--contactus-border);
+  border-bottom: 1px solid var(--contactus-border);
   padding: 12px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
+  transition: background 0.2s;
 }
-
-#contactus .contactus_box .contactus_box_item:hover {
+#contactus .contactus_box .contactus_box_item:hover, #contactus .contactus_box .contactus_box_item:focus {
   background: #294661;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn {
   width: 48px;
   height: 48px;
-  border-radius: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-radius: 50%;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.2s;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_facebook {
-  background: #0084ff;
+  background: var(--contactus-facebook);
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_facebook .contactus_item_btn_icon {
   width: 30px;
   height: 30px;
-  background-image: url("https://contactus.nikba.com/assets/svg/messenger.svg");
+  background-image: url(https://contactus.nikba.com/assets/svg/messenger.svg);
   background-size: cover;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_whatsapp {
-  background: #25d366;
+  background: var(--contactus-whatsapp);
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_whatsapp .contactus_item_btn_icon {
   width: 30px;
   height: 30px;
-  background-image: url("https://contactus.nikba.com/assets/svg/whatsapp.svg");
+  background-image: url(https://contactus.nikba.com/assets/svg/whatsapp.svg);
   background-size: cover;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_viber {
-  background: #8f5db7;
+  background: var(--contactus-viber);
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_viber .contactus_item_btn_icon {
   width: 30px;
   height: 30px;
-  background-image: url("https://contactus.nikba.com/assets/svg/viber.svg");
+  background-image: url(https://contactus.nikba.com/assets/svg/viber.svg);
   background-size: cover;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_telegram {
-  background: #1b9de2;
+  background: var(--contactus-telegram);
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_telegram .contactus_item_btn_icon {
   width: 30px;
   height: 30px;
-  background-image: url("https://contactus.nikba.com/assets/svg/telegram.svg");
+  background-image: url(https://contactus.nikba.com/assets/svg/telegram.svg);
   background-size: cover;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_call {
-  background: #25d366;
+  background: var(--contactus-call);
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_call .contactus_item_btn_icon {
   width: 30px;
   height: 30px;
-  background-image: url("https://contactus.nikba.com/assets/svg/call.svg");
+  background-image: url(https://contactus.nikba.com/assets/svg/call.svg);
   background-size: cover;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_item_label {
-  color: #ffffff;
+  color: var(--contactus-white);
   text-decoration: none;
-  margin-left: 10px;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
-
 #contactus .contactus_box .contactus_box_item .contactus_item_label .contactus_item_sub_label {
-  display: block;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  color: #afc0d1;
+  color: var(--contactus-title);
 }
-
 #contactus .contactus_box .contactus_box_item:last-child {
   border-bottom: none;
 }
-
 #contactus .contactus_box .contactus_box_item:last-child:hover {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-
 #contactus .contactus_btn {
   position: fixed;
   z-index: 999999999;
@@ -215,36 +153,24 @@
   height: 60px;
   bottom: 30px;
   right: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  background-color: #00a3ff;
-  border-radius: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation: pulse 2s infinite;
-          animation: pulse 2s infinite;
+  background-color: var(--contactus-btn-bg);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
   cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
 }
-
 #contactus .contactus_btn.contactus_btn_left {
   left: 30px;
-  z-index: 999999999;
 }
-
 #contactus .contactus_btn .contactus_btn_alert {
   position: absolute;
   right: -6px;
   top: -6px;
-  background: #EB5757;
-  color: #fff;
-  content: "1";
+  background: var(--contactus-alert);
+  color: var(--contactus-white);
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -252,67 +178,36 @@
   font-size: 12px;
   line-height: 22px;
 }
-
 #contactus .contactus_btn .contactus_btn_icon {
   width: 30px;
   height: 30px;
-  background-image: url("https://contactus.nikba.com/assets/svg/message.svg");
+  background-image: url(https://contactus.nikba.com/assets/svg/message.svg);
   background-size: cover;
+  transition: background-image 0.2s;
 }
-
 #contactus .contactus_btn:hover, #contactus .contactus_btn:active {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
-
 #contactus .contactus_btn.opened {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
-
 #contactus .contactus_btn.opened .contactus_btn_icon {
-  background-image: url("https://contactus.nikba.com/assets/svg/close.svg");
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
-            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
-            box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
-  }
-  100% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
-            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
-  }
+  background-image: url(https://contactus.nikba.com/assets/svg/close.svg);
 }
 
 @keyframes pulse {
   0% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
-            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 163, 255, 0.7);
   }
   70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
-            box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 163, 255, 0);
   }
   100% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
-            box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 163, 255, 0);
   }
 }
+
 /*# sourceMappingURL=style.css.map */

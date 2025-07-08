@@ -77,7 +77,7 @@ function getFormValues() {
 }
 
 function generateCodeSnippet(values) {
-    return `<script src="contactus.min.js"></script>\n` +
+    return `<script src="https://contactus.nikba.com/contactus.min.js"></script>\n` +
         `<div id="contactus"` +
         (values.call ? ` call="${values.call}"` : '') +
         (values['callLabel'] ? ` call-label="${values.callLabel}"` : '') +
