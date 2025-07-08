@@ -2,7 +2,7 @@ class ContactWidget {
     constructor(containerId = '#contactus') {
       this.config = {
         prefix: 'contactus',
-        version: '2.0.0',
+        version: '2.0.1',
         core: 'https://contactus.nikba.com/',
         defaultTitle: 'Need help? Contact us!!'
       };

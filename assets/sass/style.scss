@@ -62,7 +62,7 @@ $core: "https://contactus.nikba.com/";
         width: 24px;
         height: 24px;
         margin-left: 8px;
-        background-image: url("#{$core}assets/svg/message.svg");
+        background-image: url(#{$core}assets/svg/message.svg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

@@ -1,6 +1,6 @@
 {
   "name": "contactus",
-  "version": "1.9.2",
+  "version": "2.0.1",
   "description": "Contactus takes the website visitors directly to the messaging app on desktop or mobile. ",
   "main": "contactus.js",
   "scripts": {
