@@ -56,6 +56,21 @@
   line-height: 14px;
   font-weight: 400;
 }
+#contactus .contactus_box .contactus_box_header .contactus_box_header_logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  background-image: url("https://contactus.nikba.com/assets/svg/message.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+#contactus .contactus_box .contactus_box_header .contactus_box_header_logo:hover, #contactus .contactus_box .contactus_box_header .contactus_box_header_logo:focus {
+  opacity: 1;
+}
 #contactus .contactus_box .contactus_box_item {
   border-top: 1px solid var(--contactus-border);
   border-bottom: 1px solid var(--contactus-border);
