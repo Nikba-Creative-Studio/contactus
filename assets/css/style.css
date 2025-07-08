@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;300;400;700&display=swap");
 :root {
   --contactus-bg: #18222d;
   --contactus-header-bg: #22303f;
@@ -15,7 +15,7 @@
 }
 
 #contactus {
-  font-family: "Roboto", sans-serif;
+  font-family: "Onest", sans-serif;
   z-index: 999999999;
 }
 #contactus .contactus_box {
@@ -49,6 +49,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  gap: 8px;
 }
 #contactus .contactus_box .contactus_box_header .contactus_box_header_title {
   color: var(--contactus-title);
@@ -57,9 +58,11 @@
   font-weight: 400;
 }
 #contactus .contactus_box .contactus_box_header .contactus_box_header_logo {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
   margin-left: 8px;
   background-image: url(https://contactus.nikba.com/assets/svg/message.svg);
   background-size: contain;
@@ -76,6 +79,7 @@
   border-bottom: 1px solid var(--contactus-border);
   padding: 12px 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
   text-decoration: none;
@@ -89,8 +93,8 @@
   height: 48px;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: box-shadow 0.2s;
 }
 #contactus .contactus_box .contactus_box_item .contactus_box_item_btn.contactus_facebook {
@@ -169,10 +173,10 @@
   bottom: 30px;
   right: 30px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--contactus-btn-bg);
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   animation: pulse 2s infinite;
   cursor: pointer;
   transition: box-shadow 0.2s, background 0.2s;
@@ -192,6 +196,9 @@
   text-align: center;
   font-size: 12px;
   line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #contactus .contactus_btn .contactus_btn_icon {
   width: 30px;
@@ -199,6 +206,9 @@
   background-image: url(https://contactus.nikba.com/assets/svg/message.svg);
   background-size: cover;
   transition: background-image 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #contactus .contactus_btn:hover, #contactus .contactus_btn:active {
   animation: none;

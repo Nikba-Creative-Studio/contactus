@@ -15,12 +15,13 @@ $core: "https://contactus.nikba.com/";
   --contactus-alert: #EB5757;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;300;400;700&display=swap");
 
 #contactus {
-  font-family: "Roboto", sans-serif;
+  font-family: "Onest", sans-serif;
   z-index: 999999999;
 
+  // Widget main box
   .contactus_box {
     position: fixed;
     z-index: 999999999;
@@ -43,6 +44,7 @@ $core: "https://contactus.nikba.com/";
       visibility: visible;
       opacity: 1;
     }
+    // Header
     .contactus_box_header {
       height: 32px;
       background: var(--contactus-header-bg);
@@ -51,6 +53,7 @@ $core: "https://contactus.nikba.com/";
       align-items: center;
       justify-content: space-between;
       padding: 0 20px;
+      gap: 8px;
       .contactus_box_header_title {
         color: var(--contactus-title);
         font-size: 12px;
@@ -58,9 +61,11 @@ $core: "https://contactus.nikba.com/";
         font-weight: 400;
       }
       .contactus_box_header_logo {
-        display: inline-block;
-        width: 24px;
-        height: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
         margin-left: 8px;
         background-image: url(#{$core}assets/svg/message.svg);
         background-size: contain;
@@ -74,11 +79,13 @@ $core: "https://contactus.nikba.com/";
         }
       }
     }
+    // Messenger items
     .contactus_box_item {
       border-top: 1px solid var(--contactus-border);
       border-bottom: 1px solid var(--contactus-border);
       padding: 12px 20px;
       display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 10px;
       text-decoration: none;
@@ -86,13 +93,14 @@ $core: "https://contactus.nikba.com/";
       &:hover, &:focus {
         background: #294661;
       }
+      // Messenger button
       .contactus_box_item_btn {
         width: 48px;
         height: 48px;
         border-radius: 50%;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         transition: box-shadow 0.2s;
         &.contactus_facebook {
           background: var(--contactus-facebook);
@@ -140,6 +148,7 @@ $core: "https://contactus.nikba.com/";
           }
         }
       }
+      // Messenger label
       .contactus_item_label {
         color: var(--contactus-white);
         text-decoration: none;
@@ -165,6 +174,7 @@ $core: "https://contactus.nikba.com/";
       }
     }
   }
+  // Main floating button
   .contactus_btn {
     position: fixed;
     z-index: 999999999;
@@ -173,10 +183,10 @@ $core: "https://contactus.nikba.com/";
     bottom: 30px;
     right: 30px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--contactus-btn-bg);
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
     animation: pulse 2s infinite;
     cursor: pointer;
     transition: box-shadow 0.2s, background 0.2s;
@@ -195,6 +205,9 @@ $core: "https://contactus.nikba.com/";
       text-align: center;
       font-size: 12px;
       line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .contactus_btn_icon {
       width: 30px;
@@ -202,6 +215,9 @@ $core: "https://contactus.nikba.com/";
       background-image: url(#{$core}assets/svg/message.svg);
       background-size: cover;
       transition: background-image 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &:hover,
     &:active {
