@@ -4,8 +4,7 @@
   "description": "Contactus takes the website visitors directly to the messaging app on desktop or mobile. ",
   "main": "contactus.js",
   "scripts": {
-    "build": "rm -rf dist && webpack",
-    "dev": "webpack-dev-server --open --watch"
+    "build": "esbuild contactus.js --bundle --minify --outfile=contactus.min.js --format=iife"
   },
   "repository": {
     "type": "git",
@@ -33,10 +32,6 @@
     "npm": "^10.5.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
-    "babel-loader": "^8.3.0",
-    "webpack": "^5.76.0",
-    "webpack-cli": "^4.7.0"
+    "esbuild": "^0.20.0"
   }
 }
